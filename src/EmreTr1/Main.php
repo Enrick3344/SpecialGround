@@ -35,7 +35,7 @@
    	 	$this->config=new Config($this->getDataFolder()."config.yml", Config::YAML);
    	 }
    	 
-   	 public function onCommand(CommandSender $p, Command $cmd, $label, array $args){
+   	 public function onCommand(CommandSender $p, Command $cmd, string $label, array $args): bool{
    	 	if(!$p->hasPermission("scg.command.use")){
    	 		return false;
    	 	}
@@ -133,6 +133,7 @@
    	 	}else{
    	 		$p->sendMessage($this->usages["help"]);
    	 	}
+          return true;
    	 }
    	 
    	 public function onMove(PlayerMoveEvent $event){
