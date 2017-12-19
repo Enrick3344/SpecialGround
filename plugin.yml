@@ -1,7 +1,7 @@
 name: SpecialGround
 main: EmreTr1\Main
 version: 1.0
-api: 2.0.0
+api: 3.0.0-ALPHA10
 author: EmreTr1
 description: SpecialGround Plugin for PocketMine
 website: minedogs.tk
